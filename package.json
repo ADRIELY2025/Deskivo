@@ -1,12 +1,13 @@
 {
     "name": "deskivo",
     "version": "1.0.0",
-    "main": "main.js",
+    "main": "/app/renderer/main/index.js",
     "private": true,
     "scripts": {
         "start": "electron ."
     },
     "devDependencies": {
-        "electron": "^40.7.0"
+        "electron": "^40.7.0",
+        "pg": "^8.20.0"
     }
 }

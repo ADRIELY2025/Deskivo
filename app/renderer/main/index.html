@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>lista cliente</title>
+</head>
+<body>
+    <h1>Teste Electron</h1>
+    <button id="btn">Enviar Mensagem</button>
+
+    <script>
+        const btn = document.getElementById("btn")
+
+        btn.addEventListener("click", () => {
+            window.api.enviarMensagem("Olá main process")
+        })
+
+        window.api.receberMensagem((resposta) => {
+            alert(resposta)
+        })
+    </script>
+</body>
+</html>
